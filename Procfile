@@ -1,1 +1,1 @@
-web: gunicorn tuxts.wsgi --log-file -
+web: cd tuxts && gunicorn tuxts.wsgi --log-file -
