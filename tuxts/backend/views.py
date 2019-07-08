@@ -4,6 +4,6 @@ from backend.serializers import TextSerializer
 from django_filters.rest_framework import DjangoFilterBackend
  
 class TextViewSet(viewsets.ModelViewSet):
-    queryset = Text.objects.all()
+    queryset = Text.objects.order_by('id')
     serializer_class = TextSerializer
     filterset_fields = ('date',)
